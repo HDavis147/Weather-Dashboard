@@ -4,7 +4,7 @@ This repository holds the code for my weather dashboard application.
 ## Description
 This application is a dashboard that displays weather for the searched city.
 
-![Screenshot of Weather Dashboard](./Assets/weather-dashboard.png)
+![Screenshot of Weather Dashboard](./assets/weather-dashboard.png)
 
 ## Usage
 
