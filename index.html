@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid top">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <h1>Weather Dashboard</h1>
       </header>
-    <main class="container-fluid">
-      <div class="left">
+    <main class="container-fluid content">
+      <div class="container-fluid left">
         <h2>Search</h2>
         <form>
           <div class="mb-3">
@@ -22,17 +22,16 @@
             <input type="city" class="form-control" id="citySearch">
             <div class="form-text">Enter a city to search current weather.</div>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" id="searchBtn">Submit</button>
         </form>
         <hr>
         <h2>History</h2>
+        <div id="history"></div>
       </div>
-      <div class="right">
+      <div class="container-fluid right">
         <div class="current">
           <h2>Current Weather:</h2>
-        </div>
-        <div class="future">
-          <h2>5-Day Forecast:</h2>
+          <div id="weatherDisplay"></div>
         </div>
       </div>
     </main>

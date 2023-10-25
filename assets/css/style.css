@@ -1,0 +1,26 @@
+.top {
+  height: 100vh;
+  background-color: #403d39;
+}
+
+h1,h2 {
+  color: #eb5e28
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  background-color: #ccc5b9;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  border-left: 2px solid #403d39;
+}
+
+.container {
+  border: 2px solid green;
+}
