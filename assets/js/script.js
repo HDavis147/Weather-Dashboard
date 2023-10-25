@@ -31,18 +31,9 @@ $.ajax({
   var wind = response.wind.speed;
   var iconUrl = "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png";
 
-  $("#weatherDisplay").html("<h3>City: " + cityName + "</h3><br>Temperature: " + temp + "°F<br>Humidity: " + humidity + "%<br>Wind Speed: " + wind + " mph<br><img src='" + iconUrl + "'>");
+  $("#weatherDisplay").html("<h3>City: " + cityName + "<img src='" + iconUrl + "'></h3><br>Temperature: " + temp + "°F<br>Humidity: " + humidity + "%<br>Wind Speed: " + wind + " mph<br>");
 });
 
 
 
 searchBtn.on('click', setCity);
-// GIVEN a weather dashboard with form inputs
-// WHEN I search for a city
-// THEN I am presented with current and future conditions for that city and that city is added to the search history
-// WHEN I view current weather conditions for that city
-// THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
-// WHEN I view future weather conditions for that city
-// THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-// WHEN I click on a city in the search history
-// THEN I am again presented with current and future conditions for that city
